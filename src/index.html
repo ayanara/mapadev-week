@@ -17,59 +17,80 @@
 <body>
   <main class="cartao">
     <div class="minhas-informacoes">
-      <img class="foto" src="./image/AyanaraNathane.png" alt="AyanaraNathane" width="200">
+      <img class="foto" src="./image/AyanaraFundoamarelo.png" alt="AyanaraNathane" width="200">
       <h1 class="nome">Ayanara Nathane</h1>
       <h3 class="cargo">Estudante de Desenvolvimento Web</h3>
       <h3 class="cargo">Full-Stack</h3>
     </div>
     <div class="conteudo">
       <ul class="abas">
-        <li class="aba selecionada">
-          <i class="bi bi-person-heart"></i>
+        <li class="aba selecionado" id="sobre-mim">
+          <h1 class="bi bi-house-heart-fill"></h1>
         </li>
-        <li class="aba">
-          <i class="bi bi-share-fill"></i>
+        <li class="aba" id="minhas-redes">
+          <h1 class="bi bi-share-fill"></h1>
         </li>
-        <li class="aba">
-          <i class="bi bi-chat-left-heart-fill"></i>
+        <li class="aba" id="contato">
+          <h1 class="bi bi-chat-left-heart-fill"></h1>
         </li>
 
       </ul>
 
       <div class="informacoes-abas">
-        <div class="informacoes selecionado">
+        <div class="informacoes selecionado" id="informacao-sobre-mim">
           <h3>Sobre mim</h3>
           <div>
             <p>Oi! meu nome é Ayanara Nathane, seja bem vindas e vindos!</p>
             <p>Sempre em busca de conhecimento e novos aprendizados.
               Atualmente sou estudante de <span>desenvolvimento WEB, Full-Stack.</span>
               Programar esta sendo um desafio constante, porém, uma experiência 
-              muito gratificante. Além de estudar  Front End e Back End, também 
+              muito gratificante. Além de estudar  <span>Front-End e Back-End</span> , também 
               gosto de estudar <span>User experience</span> , pois encontrei nessa área uma 
               forma de melhor suprir as necessidades do usuário. 
-              E não posso esquecer da minha  formação em Licenciatura em 
-              Ciências Sociais, tendo como maior interesses tudo que  envolve o 
+              E não posso esquecer da minha formação em <span>
+              Ciências Sociais</span>, tendo como maior interesses tudo que  envolve o 
               ser humano, a sociedade e seu desenvolvimento social.</p>
           </div>
         </div>
       
-      <div class="redes-sociais">
-        <h3>Minhas redes</h3>
+      <div class="redes-sociais informacoes" id="informacao-minhas-redes">
+        <h3>Minhas Redes</h3>
         <ul>
-          <li><a href="https://www.linkedin.com/in/ayanara/" target="_blank">Linkedin</a></li>
-          <li><a href="https://github.com/ayanara" target="_blank">GitHub</a></li>
-          <li><a href="https://www.behance.net/ayanaranathane" target="_blank">Behance</a></li>
+          <li>
+            <a class="bi bi-linkedin"
+            href="https://www.linkedin.com/in/ayanara/" 
+            target="_blank">Linkedin</a>
+          </li>
+          <li>
+            <a class="bi bi-github"
+            href="https://github.com/ayanara" 
+            target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a class="bi bi-behance"
+            href="https://www.behance.net/ayanaranathane" 
+            target="_blank">Behance</a>
+          </li>
         </ul>
       </div>
-      <div class="contato">
+      <div class="contato informacoes" id="informacao-contato">
         <h3>Contado</h3>
-        <p>Fale comigo</p>
+        <form class="form">
+          <div>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+            <input type="email" id="email" name="email" placeholder="Seu email">
+            <textarea name="duvida" rows="4" cols="50" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button></div>
+        </form>
+        
         
       </div>
     </div>
   </div>
 
   </main>
+
+  <script src="./index.js/index.js"></script>
   
 </body>
 </html>
